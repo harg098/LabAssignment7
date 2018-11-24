@@ -18,7 +18,6 @@ export class AppComponent {
   showToast() {
 
     const rand = Math.floor(Math.random()*4);
-    console.log('My random number ' + rand);
     const toastType = this.toastTypes[rand];
     const toastMessage ='The random number is: ' + rand;
     const duration = 4000;
