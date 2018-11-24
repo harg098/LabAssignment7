@@ -14,7 +14,6 @@ export class ToastComponent implements OnInit {
   ngOnInit() {
 
     this.toastService.toastChanged.subscribe((data: any) => {
-      console.log('data--->', data);
       this.toasts.push(data);
     });
 
